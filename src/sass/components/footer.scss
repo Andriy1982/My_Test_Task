@@ -1,0 +1,56 @@
+.container__footer {
+    // @include center-flex ('ver');
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1200px ;
+}
+
+.footer {
+    background-color: #767676;
+    // display: flex;
+    // min-height: 62px;
+    // border-top: 1px solid rgb(229, 229, 229); 
+}
+
+.footer__container {
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer__description {
+    font-size: 14px;
+    font-family: $main-font;
+    color: $sections-color;
+}
+
+.footer__link {
+    color: rgb(243, 129, 129);
+}
+
+.contact-form {
+    display: flex;
+}
+
+.contact-form__btn {
+    font-size: 14px;
+    font-family: $main-font;
+    color: $primary-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 14px 34px;
+    background-color: rgb(149, 225, 211);
+}
+
+.contact-form__input {
+    min-width: 230px;
+    border:  1px solid rgb(231, 231, 231);
+ 
+    &::placeholder {
+    font-size: 15px;
+    font-family: $secondary-font;
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    line-height: 1.6;
+    }
+}
