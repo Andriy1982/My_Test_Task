@@ -7,6 +7,8 @@
 
 .footer {
     background-color: #767676;
+    color: #ffffff;
+    padding: 54px 0;
     // display: flex;
     // min-height: 62px;
     // border-top: 1px solid rgb(229, 229, 229); 
@@ -18,39 +20,61 @@
 }
 
 .footer__description {
-    font-size: 14px;
-    font-family: $main-font;
-    color: $sections-color;
+        color: #ffffff;
+        line-height: 1.571;   
 }
 
 .footer__link {
-    color: rgb(243, 129, 129);
+    display: block;
+    color: #ffffff;
 }
 
-.contact-form {
-    display: flex;
-}
+// .footer__navigation-item:not(:last-child) {
+// margin-bottom: 16px;
+// }
 
-.contact-form__btn {
+
+.footer__navigation-link {
     font-size: 14px;
-    font-family: $main-font;
-    color: $primary-color;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 14px 34px;
-    background-color: rgb(149, 225, 211);
-}
-
-.contact-form__input {
-    min-width: 230px;
-    border:  1px solid rgb(231, 231, 231);
- 
-    &::placeholder {
-    font-size: 15px;
-    font-family: $secondary-font;
-    color: rgb(204, 204, 204);
-    font-style: italic;
-    line-height: 1.6;
+    font-family: "Myriad Pro";
+    color: #ffffff;
+    text-decoration: underline;
+    line-height: 1.857;
+  }
+  
+  .footer__link-company {
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: #ffffff;
+    text-decoration: underline;
+    line-height: 1.571;
+  }
+  
+  .footer__link-company + span {
+    display: block;
+    // text-decoration: none;
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    color: #ffffff;
     }
-}
+
+    .footer__company-wrap {
+        padding-right: 50px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            left: -50px;
+            top: 6px;
+            display: block;
+            content: " ";
+            width: 36px;
+            height: 38px;
+            background-image: url(../../images/company.png);
+        }
+    }
+
+
+
+    
+      

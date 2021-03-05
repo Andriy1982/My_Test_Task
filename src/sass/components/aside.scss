@@ -1,0 +1,63 @@
+.aside {
+    position: relative;
+    width: 200px;
+}
+
+.aside__list  ul {
+    display: none;
+    list-style: inside;
+    padding-left: 12px;
+}
+
+.aside__list-item {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Myriad Pro";
+    color: #767676;
+    cursor: pointer;
+    
+
+    &:hover span {
+        border-bottom: solid 2px #767676;
+    }
+
+    &:hover ul {
+        display: block;
+    }
+}
+
+
+.aside__list-link {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Myriad Pro";
+    color: #767676;
+
+    &:hover {
+        color: #010101;
+        border-bottom: solid 1px;
+    }
+}
+
+.aside__link-price {
+    position: absolute;
+    width: 100%;
+    top: 362px;
+    left: 50%;
+    transform: translateX(-50%);
+ 
+}
+
+.aside__link-price img {
+    margin: 0 auto;
+}
+
+
+
+.aside__link-price p {
+    font-size: 30px;
+    font-family: "Myriad Pro";
+    color: #444444;
+    text-align: center;
+  }
+  
