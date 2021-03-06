@@ -1,12 +1,22 @@
 .Modal__backdrop {
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: opacity 200ms linear;
   }
-  
+
+  .show-modal {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
+
   .Modal__content {
     position: absolute;
     top: 50%;
@@ -60,10 +70,6 @@
     color: rgb(83, 83, 83);
     line-height: 1.2;
     text-align: center;
-
-    // &:last-child{
-    //     margin-bottom: 22px;
-    // }
   }
   
 
