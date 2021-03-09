@@ -1,82 +1,75 @@
 .product {
-    padding-bottom: 68px;
-    margin-bottom: 32px;
-    border-bottom: solid 1px #dcdcdc;
+  padding-bottom: 68px;
+  margin-bottom: 32px;
+  border-bottom: solid 1px $secondary-color;
 }
 
 .product__list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(380px, 1fr));
-    column-gap: 16px;
-    row-gap: 20px;
-    justify-content: center;
-    margin-bottom: 30px;  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(380px, 1fr));
+  column-gap: 16px;
+  row-gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .product__list-item {
-    padding: 20px;
-    background-color: #dcdcdc;
+  padding: 20px;
+  background-color: $secondary-color;
 }
 
 .product__image {
-    width: 100%;
-    margin-bottom: 22px;
+  width: 100%;
+  margin-bottom: 22px;
 }
 
 .product__description {
-    font-size: 18px;
-    font-family: "Myriad Pro";
-    color: #767676;
-    margin-bottom: 60px;
+  font-size: 18px;
+  color: $main-font-color;
+  margin-bottom: 60px;
+}
+
+.product__price {
+  display: inline-block;
+  font-size: 28px;
+  color: #444444;
+}
+
+.product__button {
+  display: inline-block;
+  background-image: url(../images/addtobasket_mini.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 28px;
+  height: 21px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.product__pagination div {
+  display: flex;
+}
+
+.product__pagination span {
+  display: block;
+  color: $main-font-color;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(2);
   }
+}
 
-  .product__price {
-      display: inline-block;
-    font-size: 28px;
-    font-family: "Myriad Pro";
-    color: #444444;
-  }
-
-  .product__button {
-      display: inline-block;
-        background-image: url(../../images/addtobasket_mini.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 28px;
-        height: 21px;
-  }
-
-  .wrap {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-
-  .product__pagination  {
-    display: flex;
-    justify-content: center;
-  }
-
-  .product__pagination div {
-      display: flex;
-  }
-
-
-  .product__pagination span {
-    display: block;
-    font-size: 14px;
-    font-family: "Myriad Pro";
-    color: #767676;
-    cursor: pointer;
-
-    &:hover {
-        transform: scale(2);
-    }
-  }
-
-  .product__pagination span:not(:last-child) {
-      margin-right: 20px;
-  }
-  
-  
+.product__pagination span:not(:last-child) {
+  margin-right: 20px;
+}

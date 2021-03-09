@@ -1,63 +1,55 @@
 .aside {
-    position: relative;
-    width: 200px;
+  position: relative;
+  width: 200px;
 }
 
-.aside__list  ul {
-    display: none;
-    list-style: inside;
-    padding-left: 12px;
+.aside__list ul {
+  display: none;
+  list-style: inside;
+  padding-left: 12px;
 }
 
 .aside__list-item {
-    font-size: 18px;
-    line-height: 30px;
-    font-family: "Myriad Pro";
-    color: #767676;
-    cursor: pointer;
-    
+  font-size: 18px;
+  line-height: 30px;
+  color: $main-font-color;
+  cursor: pointer;
 
-    &:hover span {
-        border-bottom: solid 2px #767676;
-    }
+  &:hover span {
+    border-bottom: solid 2px $main-font-color;
+  }
 
-    &:hover ul {
-        display: block;
-    }
+  &:hover ul {
+    display: block;
+  }
 }
 
-
 .aside__list-link {
-    font-size: 14px;
-    line-height: 22px;
-    font-family: "Myriad Pro";
-    color: #767676;
+  font-size: 14px;
+  line-height: 22px;
+  color: $main-font-color;
 
-    &:hover {
-        color: #010101;
-        border-bottom: solid 1px;
-    }
+  &:hover {
+    color: $accent-font-color;
+    border-bottom: solid 1px $accent-font-color;
+  }
 }
 
 .aside__link-price {
-    position: absolute;
-    width: 100%;
-    top: 362px;
-    left: 50%;
-    transform: translateX(-50%);
- 
+  position: absolute;
+  width: 100%;
+  top: 362px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .aside__link-price img {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-
-
 .aside__link-price p {
-    font-size: 30px;
-    font-family: "Myriad Pro";
-    color: #444444;
-    text-align: center;
-  }
-  
+  font-size: 30px;
+  font-weight: 700;
+  color: #444444;
+  text-align: center;
+}

@@ -1,17 +1,7 @@
-.container__footer {
-    // @include center-flex ('ver');
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 1200px ;
-}
-
 .footer {
-    background-color: #767676;
-    color: #ffffff;
+    background-color: $main-font-color;
+    color: $second-font-color;
     padding: 54px 0;
-    // display: flex;
-    // min-height: 62px;
-    // border-top: 1px solid rgb(229, 229, 229); 
 }
 
 .footer__container {
@@ -20,42 +10,30 @@
 }
 
 .footer__description {
-        color: #ffffff;
+        color: $second-font-color;
         line-height: 1.571;   
 }
 
 .footer__link {
     display: block;
-    color: #ffffff;
+    color: $second-font-color;
 }
 
-// .footer__navigation-item:not(:last-child) {
-// margin-bottom: 16px;
-// }
-
-
-.footer__navigation-link {
-    font-size: 14px;
-    font-family: "Myriad Pro";
-    color: #ffffff;
+.footer__navigation-link {;
+    color:$second-font-color;
     text-decoration: underline;
     line-height: 1.857;
   }
   
   .footer__link-company {
-    font-size: 14px;
-    font-family: "Myriad Pro";
-    color: #ffffff;
+    color: $second-font-color;
     text-decoration: underline;
     line-height: 1.571;
   }
   
   .footer__link-company + span {
     display: block;
-    // text-decoration: none;
-    font-size: 14px;
-    font-family: "Myriad Pro";
-    color: #ffffff;
+    color: $second-font-color;
     }
 
     .footer__company-wrap {
@@ -70,7 +48,7 @@
             content: " ";
             width: 36px;
             height: 38px;
-            background-image: url(../../images/company.png);
+            background-image: url(../images/company.png);
         }
     }
 

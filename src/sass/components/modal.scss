@@ -22,13 +22,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* min-height: 200px; */
     width: 470px;
     height: 580px;
-    // max-width: 50%;
-    // width: 100%;
-    /* padding: 12px; */
-    background-color: #fff;
+    background-color: $second-font-color;
     border-radius: 3px;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -47,28 +43,24 @@
      }
 
      & > label:nth-of-type(4) {
-         margin-bottom: 8px;
+         margin-bottom: 10px;
      }
   }
 
   
   .form__title {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
     font-size: 24px;
-    font-family: "PTSans";
-    color: #535353;
+    color: $form-font-color;
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.2;
     text-align: center;
   }
 
   .form__label{
   
     font-size: 14px;
-    font-family: "PTSans";
-    color: rgb(83, 83, 83);
-    line-height: 1.2;
+    color: $form-font-color;
     text-align: center;
   }
   
@@ -80,22 +72,34 @@
       height: 40px;
       border: solid 1px #c3c3c3;
   }
+
+  .form__input:invalid {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 131, 131);
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 13px 0px rgba(228, 106, 106, 0.75);
+  }
+
+  .form__input::placeholder {
+   color: rgb(220, 127, 127);
+  }
   
   .form__textarea {
   resize: none;
   margin-bottom: 22px;
-  width: 340px;
+  width: 342px;
   height: 140px;
   }
 
  
   .form__btn-submit {
     font-size: 22px;
-    color: #ffffff;
+    color: $second-font-color;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
-    background-color: #777777;
+    background-color: $form-bg-color;
     padding: 14px;
   }
 
@@ -105,8 +109,8 @@
       right: 0;
     width: 27px;
     height: 27px;
-    background-image: url(../../images/btn_close.png);
-    background-color: #777777;
+    background-image: url(../images/btn_close.png);
+    background-color: $form-bg-color;
     background-repeat: no-repeat;
     background-position: center;
     transform: translate(100%, -100%);
